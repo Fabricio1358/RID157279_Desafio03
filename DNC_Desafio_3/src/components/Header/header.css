@@ -1,17 +1,16 @@
-.header {
+.header { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 0px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     position: fixed;
     width: 100%;
     z-index: 1000;
     top: 0;
     left: 0;
     height: 100px;
-    width: 100%;
+    width: 76%;
     max-width: 1280px;
     margin: 0 12%;
 }
@@ -25,8 +24,8 @@
     margin: 0;
     top: 0;
     margin-left: auto; /* Empurra a lista para a direita */
-    gap: 24px;
-    padding-right: 6em;
+    gap: 28px;
+    padding-right: 2em;
 }
 
 .nav__list {
@@ -38,7 +37,7 @@
     margin: 0;
     top: 0;
     margin-left: auto; /* Empurra a lista para a direita */
-    gap: 24px;
+    gap: 28px;
 }
 .nav__list a {
     margin: 0;
