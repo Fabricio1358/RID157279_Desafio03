@@ -1,15 +1,15 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Importando o BrowserRouter, Route e Routes
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'
 
 // Páginas
 import Home from './pages/Home/Home/home.tsx';
 
-function App() { // Criando o componente App
+function App() {
   return (
       <Router>
-          <Routes> {/* Definindo as rotas */}
+          <Routes>
               <Route path="/" element={<Home/>} />
-              <Route path="/home" element={<Home/>} /> {/* Adicionando a rota /home */}
+              <Route path="/home" element={<Home/>} />
               <Route path="/projetos" element={<>Cadastro</>} />
               <Route path="/blog" element={<>Login</>} />
               <Route path="/contato" element={<>Leads</>} />
@@ -18,4 +18,4 @@ function App() { // Criando o componente App
   );
 }
 
-export default App; // Exportando o componente App
+export default App;
