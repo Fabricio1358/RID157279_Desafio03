@@ -5,7 +5,7 @@
     justify-content: center;
     padding-top: 60px;
     max-width: 100%;
-    height: 500px;
+    height: 450px;
     position: relative;
     margin: 0;
     margin-top: 60px;
@@ -18,13 +18,13 @@
     width: 76%;
     gap: 10px;
     margin: 0 12%;
+    height: 100%;
 }
 .box-container h2 {
     color: black;
     text-align: left;
     font-weight: 400;
     font-size: 26px;
-    margin: 0;
 }
 
 .box {
@@ -33,22 +33,45 @@
     align-items: center;
     justify-content: center;
     width: 40%;
-    margin: 0;
+    padding: 0px 0;
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 4px;
     flex: 1;
     height: 100%;
 }
+.box h1 {
+    color: black;
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    margin: 10px 25px 0 25px;
+    text-align: left;
+    align-content: center;
+    height: 30%;
+}
+.box p {
+    margin: 0 25px;
+    align-content: center;
+    height: 40%;
+    text-align: left;
+}
 .box-info {
     display: flex;
     flex-direction: row;
     align-items: left;
-    justify-content: center;
+    justify-content: left;
+    align-content: center;
     width: 100%;
-    height: 100%;
-    padding: 10px;
-    gap: 5em;
+    height: 30%;
+    gap: 2em;
+
+}
+.box-info h2 {
+    font-size: 22px;
+    align-content: center;
+    height: 20px;
+    margin: 30px 0 0 25px;
 }
 
 .boxes {

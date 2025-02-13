@@ -23,6 +23,26 @@ const Home: React.FC = (): JSX.Element => {
       <div className="no-margin">
         <BlogHome />
       </div>
+      <div className="home-projetos">
+        <div className="projetos-titulo">
+          <h1>Projetos</h1>
+        </div>
+        <div className="projetos-con">
+          <div className="con-section">
+            <div className="div-img">
+              <img src="/assets/home-projetos-1.svg" alt="" />
+            </div>
+            <div className="div-sobre">
+              <h2>Designing Dashboards</h2>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
