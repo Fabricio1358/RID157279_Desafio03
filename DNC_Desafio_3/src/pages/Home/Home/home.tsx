@@ -30,7 +30,7 @@ const Home: React.FC = (): JSX.Element => {
         <div className="projetos-con">
           <div className="con-section">
             <div className="div-img">
-              <img src="/assets/home-projetos1.svg" alt="" />
+              <img className="img" src="../../../assets/home-projetos1.png" alt="img" />
             </div>
             <div className="div-sobre">
               <h2>Designing Dashboards</h2>
@@ -43,7 +43,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
           <div className="con-section">
             <div className="div-img">
-              <img src="" alt="" />
+              <img src="../../../assets/home-projetos2.png" alt="img" />
             </div>
             <div className="div-sobre">
               <h2>Vibrant Portraits of 2020</h2>
@@ -56,7 +56,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
           <div className="con-section">
             <div className="div-img">
-              <img src="/assets/home-projetos-1.svg" alt="" />
+              <img src="../../../assets/home-projetos3.png" alt="img" />
             </div>
             <div className="div-sobre">
               <h2>36 Days of Malayalam type</h2>
