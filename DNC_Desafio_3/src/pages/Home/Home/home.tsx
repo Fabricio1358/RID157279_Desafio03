@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 import Header from "../../../components/Header/header.tsx";
 import BlogHome from "../../../components/Blog/blog_Home.tsx";
+import Footer from "../../../components/Footer/footer.tsx";
 
 const Home: React.FC = (): JSX.Element => {
   return (
@@ -30,7 +31,7 @@ const Home: React.FC = (): JSX.Element => {
         <div className="projetos-con">
           <div className="con-section">
             <div className="div-img">
-              <img className="img" src="../../../assets/home-projetos1.png" alt="img" />
+              <img className="img" src="../../../assets/home-projetos1.png" alt="Projeto 1" />
             </div>
             <div className="div-sobre">
               <h2>Designing Dashboards</h2>
@@ -43,7 +44,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
           <div className="con-section">
             <div className="div-img">
-              <img src="../../../assets/home-projetos2.png" alt="img" />
+              <img src="../../../assets/home-projetos2.png" alt="Projeto 2" />
             </div>
             <div className="div-sobre">
               <h2>Vibrant Portraits of 2020</h2>
@@ -56,7 +57,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
           <div className="con-section">
             <div className="div-img">
-              <img src="../../../assets/home-projetos3.png" alt="img" />
+              <img src="../../../assets/home-projetos3.png" alt="Projeto 3" />
             </div>
             <div className="div-sobre">
               <h2>36 Days of Malayalam type</h2>
@@ -69,6 +70,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

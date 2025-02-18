@@ -1,0 +1,35 @@
+* {
+    color: rgba(33, 36, 61, 1);
+    font-weight: 500;
+}
+
+.footer {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center;
+    padding: 10px;
+    flex-wrap: nowrap;
+    gap: 1em;
+}
+
+body, #root, .App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-margin, .home-container, .no-margin, .home-projetos {
+    flex: 1;
+}
