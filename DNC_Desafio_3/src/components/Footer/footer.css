@@ -17,9 +17,9 @@
 .footer_links {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centraliza as imagens horizontalmente */
+    justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     flex-wrap: nowrap;
     gap: 1em;
 }
@@ -32,4 +32,13 @@ body, #root, .App {
 
 .home-margin, .home-container, .no-margin, .home-projetos {
     flex: 1;
+}
+
+.footer_nav_links a {
+    padding: 0px 8px;
+    color: black;
+}
+.footer_nav_links :hover {
+    color: rgb(102, 102, 102);
+    text-decoration: underline;
 }

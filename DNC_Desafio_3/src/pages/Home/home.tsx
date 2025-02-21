@@ -1,13 +1,10 @@
 import React from "react";
 import "./home.css";
-import Header from "../../../components/Header/header.tsx";
-import BlogHome from "../../../components/Blog/blog_Home.tsx";
-import Footer from "../../../components/Footer/footer.tsx";
+import BlogHome from "../../components/Blog/blog_Home.tsx";
 
 const Home: React.FC = (): JSX.Element => {
   return (
     <>
-      <Header />
       <div className="home-margin">
         <div className="home-container">
           <h1>
@@ -70,7 +67,6 @@ const Home: React.FC = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
