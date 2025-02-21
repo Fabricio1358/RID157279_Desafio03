@@ -4,8 +4,6 @@ import './App.css';
 // Componentes
 import Header from './components/Header/header.tsx';
 import Footer from './components/Footer/footer.tsx';
-
-// Utils
 import ScrollToTop from './Utils/ScrollToTop.ts';
 
 // Páginas
@@ -19,13 +17,15 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/projetos" element={<Projetos />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contato" element={<Contato />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
+      </main>
       <Footer />
     </Router>
   );

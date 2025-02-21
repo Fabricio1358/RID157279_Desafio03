@@ -1,10 +1,13 @@
 import React from "react";
 import "./home.css";
 import BlogHome from "../../components/Blog/blog_Home.tsx";
+import { useTheme } from "../../Utils/theme-context";
 
 const Home: React.FC = (): JSX.Element => {
+  const { theme } = useTheme();
+
   return (
-    <>
+    <div className={`home ${theme}`}>
       <div className="home-margin">
         <div className="home-container">
           <h1>
@@ -67,7 +70,7 @@ const Home: React.FC = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

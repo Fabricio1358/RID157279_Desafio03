@@ -6,12 +6,11 @@
 .footer {
     color: black;
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
     width: 100%;
     position: relative;
     left: 0;
     bottom: 0;
-    z-index: 1000;
 }
 
 .footer_links {
@@ -41,4 +40,14 @@ body, #root, .App {
 .footer_nav_links :hover {
     color: rgb(102, 102, 102);
     text-decoration: underline;
+}
+
+.container.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container.dark {
+    background-color: #333333;
+    color: #ffffff;
 }

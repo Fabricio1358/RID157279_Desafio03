@@ -47,6 +47,7 @@
 }
 
 .con-section {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -75,6 +76,7 @@
 }
 
 .div-sobre {
+  position: relative;
   width: 60%;
   height: 100%;
   display: flex;
@@ -84,4 +86,34 @@
 }
 .div-sobre h2 {
   font-size: 34px;
+}
+
+.home.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.home.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.home-margin, .home-container, .no-margin, .home-projetos {
+    flex: 1;
+}
+
+.red-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.red-button:hover {
+    background-color: darkred;
+}
+
+.con-section {
+  position: relative;
 }

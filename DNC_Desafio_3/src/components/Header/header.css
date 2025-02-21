@@ -44,3 +44,13 @@
     padding: 0;
     color: black;
 }
+
+.header.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.header.dark {
+    background-color: #333333;
+    color: #ffffff;
+}

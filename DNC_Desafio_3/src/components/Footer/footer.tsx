@@ -1,10 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import { useTheme } from "../../Utils/theme-context";
 
 const Footer: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <div className="footer">
+    <div className={`footer ${theme}`}>
       <div className="footer_links">
         <a
           href="https://www.facebook.com"
@@ -44,6 +47,9 @@ const Footer: React.FC = () => {
       <div className="footer_copyright">
         <p>Copyright ©2030 All rights reserved </p>
       </div>
+      <button onClick={toggleTheme}>
+        Alterar para tema {theme === 'light' ? 'escuro' : 'claro'}
+      </button>
     </div>
   );
 };
