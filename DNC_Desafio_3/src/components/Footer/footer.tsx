@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
       <div className="footer_copyright">
         <p>Copyright ©2030 All rights reserved </p>
       </div>
-      <button onClick={toggleTheme}>
+      <button onClick={toggleTheme} className="footer-button">
         Alterar para tema {theme === 'light' ? 'escuro' : 'claro'}
       </button>
     </div>

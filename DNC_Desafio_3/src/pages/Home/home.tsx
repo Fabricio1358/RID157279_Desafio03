@@ -9,7 +9,7 @@ const Home: React.FC = (): JSX.Element => {
   return (
     <div className={`home ${theme}`}>
       <div className="home-margin">
-        <div className="home-container">
+        <div className={`home-container ${theme}`}>
           <h1>
             Olá, eu sou o Fabrício<br></br>Desenvolvedor Full-stack
           </h1>
@@ -24,12 +24,12 @@ const Home: React.FC = (): JSX.Element => {
       <div className="no-margin">
         <BlogHome />
       </div>
-      <div className="home-projetos">
+      <div className={`home-projetos ${theme}`}>
         <div className="projetos-titulo">
           <h1>Projetos</h1>
         </div>
         <div className="projetos-con">
-          <div className="con-section">
+          <div className={`con-section ${theme}`}>
             <div className="div-img">
               <img className="img" src="../../../assets/home-projetos1.png" alt="Projeto 1" />
             </div>
@@ -42,7 +42,7 @@ const Home: React.FC = (): JSX.Element => {
               </p>
             </div>
           </div>
-          <div className="con-section">
+          <div className={`con-section ${theme}`}>
             <div className="div-img">
               <img src="../../../assets/home-projetos2.png" alt="Projeto 2" />
             </div>
@@ -55,7 +55,7 @@ const Home: React.FC = (): JSX.Element => {
               </p>
             </div>
           </div>
-          <div className="con-section">
+          <div className={`con-section ${theme}`}>
             <div className="div-img">
               <img src="../../../assets/home-projetos3.png" alt="Projeto 3" />
             </div>

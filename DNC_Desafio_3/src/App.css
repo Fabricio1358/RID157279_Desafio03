@@ -8,9 +8,15 @@
   display: flex;
   flex-direction: column;
 }
-
-main {
-  flex: 1;
+:root {
+    --color-light-background: #ffffff;
+    --color-light-text: #000000;
+    --color-dark-background: #111111;
+    --color-dark-text: #e0e0e0;
+    --color-dark-hover: #ffffff;
+    --color-button-background: red;
+    --color-button-text: white;
+    --color-button-hover: darkred;
 }
 
 .logo {
@@ -47,4 +53,40 @@ main {
 
 .read-the-docs {
   color: #888;
+}
+
+@import './variables.css';
+
+body.light {
+    --background-color: var(--color-light-background);
+    --text-color: var(--color-light-text);
+    --button-background: var(--color-button-background);
+    --button-text: var(--color-button-text);
+    --button-hover: var(--color-button-hover);
+}
+
+body.dark {
+    --background-color: var(--color-dark-background);
+    --text-color: var(--color-dark-text);
+    --button-background: var(--color-button-background);
+    --button-text: var(--color-button-text);
+    --button-hover: var(--color-button-hover);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-hover);
 }

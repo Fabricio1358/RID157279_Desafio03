@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header/header.tsx';
 import Footer from './components/Footer/footer.tsx';
 import ScrollToTop from './Utils/ScrollToTop.ts';
+import { ThemeProvider } from './Utils/theme-context';
 
 // Páginas
 import Home from './pages/Home/home.tsx';
@@ -14,20 +15,24 @@ import Contato from './pages/Contato/contato.tsx';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Header />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/projetos" element={<Projetos />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contato" element={<Contato />} />
-        </Routes>
-      </main>
-      <Footer />
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="App">
+          <Header />
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/projetos" element={<Projetos />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contato" element={<Contato />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 

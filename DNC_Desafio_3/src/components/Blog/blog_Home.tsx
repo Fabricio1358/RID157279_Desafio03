@@ -1,13 +1,16 @@
 import React from "react";
 import "./blog_Home.css";
+import { useTheme } from "../../Utils/theme-context";
 
 const BlogHome: React.FC = (): JSX.Element => {
+  const { theme } = useTheme();
+
   return (
-    <div className="container">
-      <div className="box-container">
+    <div className={`container ${theme}`}>
+      <div className={`box-container ${theme}`}>
         <h2>Blog</h2>
         <div className="boxes">
-          <div className="box">
+          <div className={`box ${theme}`}>
             <h1>Making a design system from scratch</h1>
             <div className="box-info">
               <h2>12 Feb 2030</h2>
@@ -19,7 +22,7 @@ const BlogHome: React.FC = (): JSX.Element => {
               Exercitation veniam consequat sunt nostrud amet.
             </p>
           </div>
-          <div className="box">
+          <div className={`box ${theme}`}>
             <h1>Creating pixel perfect icons in Figma</h1>
             <div className="box-info">
               <h2>12 Feb 2030</h2>

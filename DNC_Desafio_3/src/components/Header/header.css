@@ -46,11 +46,17 @@
 }
 
 .header.light {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color-light-background);
+    color: var(--color-light-text);
 }
 
 .header.dark {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: var(--color-dark-background);
+}
+.header.dark a, img, p {
+    color: var(--color-dark-text);
+    z-index: 1000;
+}
+.header.dark a:hover {
+    color: var(--color-dark-hover);
 }
