@@ -1,0 +1,76 @@
+.contato-container {
+  max-width: 35%;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-container h1 {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+.contato-container.light h1 {
+    color: var(--color-light-text);
+}
+.contato-container.dark h1 {
+    color: var(--color-dark-text);
+}
+
+.contato-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contato-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  border-color: var(--text-color);
+  outline: none;
+}
+
+.contato-form.light label {
+    color: var(--color-light-text);
+}
+.contato-form.dark label {
+    color: var(--color-dark-text);
+}
+
+.submit-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: var(--button-hover);
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+  }

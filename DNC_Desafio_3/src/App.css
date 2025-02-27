@@ -16,7 +16,7 @@
     --color-dark-hover: #ffffff;
     --color-button-background: red;
     --color-button-text: white;
-    --color-button-hover: darkred;
+    --color-button-hover: rgb(192, 0, 0);
 }
 
 .logo {

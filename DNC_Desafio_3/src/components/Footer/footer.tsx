@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="../../../assets/facebook.svg" alt="facebook" />
+          <img src="..\assets\facebook.svg" alt="facebook" />
         </a>
         <a
           href="https://www.instagram.com"
