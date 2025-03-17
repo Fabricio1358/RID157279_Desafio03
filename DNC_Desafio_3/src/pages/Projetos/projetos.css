@@ -9,6 +9,7 @@
 .projetos-container h1 {
   text-align: center;
   margin-bottom: 70px;
+  font-size: 45px;
 }
 .projetos-container.light h1 {
     color: var(--color-light-text);

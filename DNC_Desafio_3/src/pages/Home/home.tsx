@@ -31,7 +31,7 @@ const Home: React.FC = (): JSX.Element => {
         <div className="projetos-con">
           <div className={`con-section ${theme}`}>
             <div className="div-img">
-              <img className="img" src="../../../assets/home-projetos1.png" alt="Projeto 1" />
+              <img className="img" src="Desafio 3 Desafio Desenvolva um portfólio com React hooks/DNC_Desafio_3/src/assets/home-projetos1.png" alt="Projeto 1" />
             </div>
             <div className="div-sobre">
               <h2>Designing Dashboards</h2>
