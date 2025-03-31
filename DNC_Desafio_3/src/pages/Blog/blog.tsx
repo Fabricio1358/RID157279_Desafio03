@@ -7,27 +7,27 @@ const Blog: React.FC = (): JSX.Element => {
 
   const posts = [
     {
-      titulo: "Making a design system from scratch",
-      data: "12 Feb 2030",
-      categoria: "Design, Pattern",
+      titulo: "Criando um sistema de design do zero",
+      data: "12 Fev 2030",
+      categoria: "Design, Padrões",
       descricao:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "Neste artigo, exploramos como criar um sistema de design do zero, abordando desde a definição de componentes reutilizáveis até a implementação em projetos reais.",
       imagem: "../../../assets/home-projetos1.png",
     },
     {
-      titulo: "Creating pixel perfect icons in Figma",
-      data: "12 Feb 2030",
-      categoria: "Figma, Icon Design",
+      titulo: "Criando ícones perfeitos no Figma",
+      data: "15 Fev 2030",
+      categoria: "Figma, Design de Ícones",
       descricao:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "Aprenda como criar ícones pixel-perfect no Figma, garantindo consistência e qualidade em seus projetos de design.",
       imagem: "../../../assets/home-projetos2.png",
     },
     {
-      titulo: "36 Days of Malayalam type",
-      data: "12 Feb 2030",
-      categoria: "Typography",
+      titulo: "36 Dias de Tipografia Malayalam",
+      data: "20 Fev 2030",
+      categoria: "Tipografia",
       descricao:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+        "Uma jornada criativa explorando a tipografia Malayalam, com foco em formas inovadoras e representações artísticas de cada caractere.",
       imagem: "../../../assets/home-projetos3.png",
     },
   ];
@@ -36,21 +36,6 @@ const Blog: React.FC = (): JSX.Element => {
     <div className={`blog-container ${theme}`}>
       <h1>Blog</h1>
       <div className="blog-list">
-        {posts.map((post, index) => (
-          <div key={index} className={`blog-item ${theme}`}>
-            <div className="blog-img">
-              <img src={post.imagem} alt={post.titulo} />
-            </div>
-            <div className={`blog-info ${theme}`}>
-              <h2>{post.titulo}</h2>
-              <div className={`blog-meta ${theme}`}>
-                <span>{post.data}</span>
-                <span>{post.categoria}</span>
-              </div>
-              <p>{post.descricao}</p>
-            </div>
-          </div>
-        ))}
         {posts.map((post, index) => (
           <div key={index} className={`blog-item ${theme}`}>
             <div className="blog-img">
